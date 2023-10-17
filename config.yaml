@@ -1,0 +1,22 @@
+encoder_param:
+  in_channels: 12
+  channels: 128
+  depth: 7
+  reduced_size: 64
+  out_channels: 32
+  kernel_size: 5
+  dropout: 0.3
+  softplus_eps: 1.0e-4
+  sd_output: True
+
+decoder_param:
+  k: 32
+  width: 4096
+  in_channels: 64
+  channels: 128
+  depth: 7
+  out_channels: 12
+  kernel_size: 5
+  gaussian_out: False
+  softplus_eps: 1.0e-4
+  dropout: 0.1
